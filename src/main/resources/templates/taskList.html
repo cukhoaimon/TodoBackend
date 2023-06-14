@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Con cặc</title>
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <script th:href="@{/js/bootstrap.js}"></script>
+</head>
+<body>
+        <h1>Đây là củ khoai môn</h1>
+        <ul><!--Duyệt qua toàn bộ phần tử trong biến "khoaiProfile"-->
+            <li th:each="task : ${taskList}">
+                <span th:text="*{task.name}"></span> : <span th:text="*{task.status}"></span>
+            </li>
+        </ul>
+</body>
+</html>

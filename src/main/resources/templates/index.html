@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <script th:src="@{/js/bootstrap.js}"></script>
+    <title>Con cặc</title>
+</head>
+
+<body>
+
+    <h1 th:utext="#{cukhoaimon.hello}"></h1>
+    <a th:href="@{/taskList}" class="btn btn-primary">Xem task</a>
+
+    <a th:href="@{/addTask}" class="btn btn-primary">Thêm task</a>
+</body>
+</html>

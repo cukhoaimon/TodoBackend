@@ -1,10 +1,10 @@
-package com.cukhoaimon.webbackend;
+package com.cukhoaimon.todo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebBackendApplicationTests {
+class TodoApplicationTests {
 
 	@Test
 	void contextLoads() {
